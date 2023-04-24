@@ -7,6 +7,8 @@ A trend starts from `Natrural-Instruction` (ACL 2022), `FLAN` (ICLR 2022) and `T
 
 What's the instruction-tuning? It aims to teach language models to follow natural language (including prompt, positive or negative examples, and constraints etc.), to perform better multi-task learning on training tasks and generalization on unseen tasks.
 
+This repo includes brief summary to some paper.
+
 
 ## Papers
 
@@ -21,6 +23,17 @@ What's the instruction-tuning? It aims to teach language models to follow natura
 1. **Multitask Prompted Training Enables Zero-Shot Task Generalization**
 
    *Victor Sanh, Albert Webson, Colin Raffel, Stephen H. Bach, Lintang Sutawika, Zaid Alyafeai, Antoine Chaffin, Arnaud Stiegler, Teven Le Scao, Arun Raja, Manan Dey, M Saiful Bari, Canwen Xu, Urmish Thakker, Shanya Sharma Sharma, Eliza Szczechla, Taewoon Kim, Gunjan Chhablani, Nihal Nayak, Debajyoti Datta, Jonathan Chang, Mike Tian-Jian Jiang, Han Wang, Matteo Manica, Sheng Shen, Zheng Xin Yong, Harshit Pandey, Rachel Bawden, Thomas Wang, Trishala Neeraj, Jos Rozen, Abheesht Sharma, Andrea Santilli, Thibault Fevry, Jason Alan Fries, Ryan Teehan, Tali Bers, Stella Biderman, Leo Gao, Thomas Wolf, Alexander M. Rush* [[paper]](https://arxiv.org/abs/2110.08207) 2021.10
+   
+   提出了T0模型（以及同系列的T0+和T0++），是基于T5模型微调得到的，用到的数据集是一个multitask的混合，如下图所示。
+   定了一种prompt template，我个人感觉是对于instruction的升级版，形式没变，具体的格式有一些变化。基于这种格式化的instruction微调了T5。
+
+   这篇文章有两个研究问题
+   
+   1. 多任务 prompted training是否能提升对held-out task的泛化能力，结论是可以提升。
+   
+   2. 在更大范围的 prompts 上进行训练是否能够提升对 prompts 措辞的鲁棒性，结论是可以提升。
+
+   最终得出的T0++模型比FLAN的performance好，但是模型参数量小很多。（137B  vs 11B）
 
 1. **ZeroPrompt: Scaling Prompt-Based Pretraining to 1,000 Tasks Improves Zero-Shot Generalization**
    
@@ -124,6 +137,8 @@ What's the instruction-tuning? It aims to teach language models to follow natura
 1. **MultiInstruct: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning**
 
    *Zhiyang Xu, Ying Shen, Lifu Huang* [[paper]](https://arxiv.org/abs/2212.10773) 2022.12
+   
+   多模态相关
 
 1. **OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization**
 
@@ -168,6 +183,3 @@ What's the instruction-tuning? It aims to teach language models to follow natura
    
    *Qian Liu, Fan Zhou, Zhengbao Jiang, Longxu Dou, Min Lin* [[paper]](https://arxiv.org/abs/2304.07995) 2023.4
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=SinclairCoder/Instruction-Tuning-Papers&type=Date)](https://star-history.com/#SinclairCoder/Instruction-Tuning-Papers&Date)
