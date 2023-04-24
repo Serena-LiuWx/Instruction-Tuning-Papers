@@ -16,11 +16,11 @@ This repo includes brief summary to some paper.
    
    *Swaroop Mishra, Daniel Khashabi, Chitta Baral, Hannaneh Hajishirzi* [[paper]](https://aclanthology.org/2022.acl-long.244/) 2021.4
 
-1. **Finetuned language models are zero-shot learners**
+1. [FLAN]**Finetuned language models are zero-shot learners**
    
    *Jason Wei, Maarten Bosma, Vincent Y. Zhao, Kelvin Guu, Adams Wei Yu, Brian Lester, Nan Du, Andrew M. Dai, Quoc V. Le* [[paper]](https://arxiv.org/abs/2109.01652) 2021.9
 
-1. **Multitask Prompted Training Enables Zero-Shot Task Generalization**
+1. [T0]**Multitask Prompted Training Enables Zero-Shot Task Generalization**
 
    *Victor Sanh, Albert Webson, Colin Raffel, Stephen H. Bach, Lintang Sutawika, Zaid Alyafeai, Antoine Chaffin, Arnaud Stiegler, Teven Le Scao, Arun Raja, Manan Dey, M Saiful Bari, Canwen Xu, Urmish Thakker, Shanya Sharma Sharma, Eliza Szczechla, Taewoon Kim, Gunjan Chhablani, Nihal Nayak, Debajyoti Datta, Jonathan Chang, Mike Tian-Jian Jiang, Han Wang, Matteo Manica, Sheng Shen, Zheng Xin Yong, Harshit Pandey, Rachel Bawden, Thomas Wang, Trishala Neeraj, Jos Rozen, Abheesht Sharma, Andrea Santilli, Thibault Fevry, Jason Alan Fries, Ryan Teehan, Tali Bers, Stella Biderman, Leo Gao, Thomas Wolf, Alexander M. Rush* [[paper]](https://arxiv.org/abs/2110.08207) 2021.10
    
